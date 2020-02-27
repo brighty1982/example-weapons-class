@@ -68,9 +68,8 @@ def generate_spears():
 #-------------------------------------------------------------------
 def craft_random_spear():
     spears = generate_spears()
-    random_spear = random.choice(spears)
+    random_spear = random.choice(spears)()
     print("You crafted a " + random_spear.type_)
-    random_spear.show_stats(random_spear)
     return random_spear
 #-------------------------------------------------------------------
 
